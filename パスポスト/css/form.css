@@ -1,0 +1,663 @@
+.fa-times-circle {
+  cursor: pointer;
+}
+
+.fa-times-circle.none {
+  display: none;
+}
+
+.fa-eye-slash,
+.fa-eye {
+  cursor: pointer;
+}
+
+.form-contents {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.form-contents.panel dl {
+  margin-bottom: 20px;
+}
+
+.form-contents .form-text {
+  margin-bottom: 30px;
+}
+
+.form-contents .bb {
+  bottom: -50px;
+}
+
+.form-contents dl {
+  margin-bottom: 50px;
+}
+
+.form-contents dl dt {
+  margin-bottom: 5px;
+}
+
+.form-contents dl dt.question-star-title {
+  margin-bottom: 15px;
+}
+
+.form-contents dl dt .option,
+.form-contents dl dt .mandatory {
+  padding: 0 3px;
+  margin-left: 10px;
+  border-radius: 2px;
+  font-size: 1.2rem;
+}
+
+.form-contents dl dt .option {
+  background-color: var(--color-right-glee);
+}
+
+.form-contents dl dt .mandatory {
+  background-color: var(--color-red2);
+}
+
+.form-contents dl dd {
+  margin-bottom: 30px;
+}
+
+.form-contents dl dd .text-input {
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: text;
+}
+
+.form-contents dl dd .text-input:not(.readonly):hover {
+  background-color: var(--color-background-hover);
+}
+
+.form-contents dl dd .text-input input {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.form-contents dl dd .text-input i {
+  color: var(--color-glee);
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.form-contents dl dd .text-input i::before {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 0;
+  top: 5px;
+  bottom: 0;
+  margin: auto;
+}
+
+.form-contents dl dd textarea {
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  resize: vertical;
+  height: 180px;
+}
+
+.form-contents dl dd textarea:hover {
+  background-color: var(--color-background-hover);
+}
+
+.form-contents dl dd .alert-text,
+.form-contents dl dd .err-text {
+  color: var(--color-red);
+}
+
+.form-contents dl dd .limit {
+  font-size: 1.2rem;
+}
+
+.form-contents dl dd .input-assistance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-contents dl dd .input-assistance span {
+  font-size: 1rem;
+}
+
+.form-contents #button,
+.form-contents #email-change-btn,
+.form-contents #pass-change-btn,
+.form-contents #posting-btn,
+.form-contents #letter-edit-btn {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 13px 0;
+  margin-bottom: 10px;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  font-weight: 600;
+}
+
+.form-contents #button:hover,
+.form-contents #email-change-btn:hover,
+.form-contents #pass-change-btn:hover,
+.form-contents #posting-btn:hover,
+.form-contents #letter-edit-btn:hover {
+  opacity: 0.8;
+}
+
+.form-contents .pass-forget-btn {
+  display: block;
+  text-align: right;
+  position: relative;
+  padding-right: 15px;
+  font-size: 1.4rem;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+.form-contents .pass-forget-btn:hover {
+  color: var(--color-red);
+}
+
+.form-contents .pass-forget-btn::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  margin: auto;
+  right: 5px;
+  border-top: 1px solid var(--color-red);
+  border-right: 1px solid var(--color-red);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.form-contents #draft-add-btn,
+.form-contents .draft-update-btn {
+  border: 1px solid var(--color-red);
+  color: var(--color-red);
+  text-align: center;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  font-weight: 600;
+}
+
+.form-contents #draft-add-btn:hover,
+.form-contents .draft-update-btn:hover {
+  background-color: rgba(227, 51, 57, 0.05);
+}
+
+.form-contents #confirm-btn {
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  color: var(--color-red);
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  font-weight: 600;
+}
+
+.form-contents #confirm-btn:hover {
+  background-color: rgba(227, 51, 57, 0.05);
+}
+
+#posting #posting-btn,
+#posting #letter-edit-btn {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+#posting dl dd:nth-of-type(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#posting dl dd:nth-of-type(1) .age-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#posting dl dd:nth-of-type(1) .age-content .age-select {
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px;
+  background: var(--color-white);
+  display: inline-block;
+}
+
+#posting dl dd:nth-of-type(1) .age-content .age-select select {
+  padding: 8px 35px 8px 15px;
+}
+
+#posting dl dd:nth-of-type(1) .age-content .age-select select option[selected][disabled] {
+  display: none;
+}
+
+#posting dl dd:nth-of-type(1) .age-content .age-select::before {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--color-red);
+  pointer-events: none;
+}
+
+#posting dl dd:nth-of-type(1) .age-content .age-select select {
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+#posting dl dd:nth-of-type(1) .age-content .age-select select::-ms-expand {
+  display: none;
+}
+
+#posting dl dd:nth-of-type(1) .age-content .mail-to {
+  font-size: 1.8rem;
+}
+
+#posting dl dd:nth-of-type(1) .alert-text {
+  width: 51%;
+}
+
+#posting dl dd:nth-of-type(2) input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+#posting dl dd:nth-of-type(2) input:checked + label::after {
+  opacity: 1;
+}
+
+#posting dl dd:nth-of-type(2) label {
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+}
+
+#posting dl dd:nth-of-type(2) label[for="user-following"], #posting dl dd:nth-of-type(2) label[for="order-good"] {
+  margin-left: 12px;
+}
+
+#posting dl dd:nth-of-type(2) label::after, #posting dl dd:nth-of-type(2) label::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+#posting dl dd:nth-of-type(2) label::after {
+  border-bottom: 3px solid var(--color-red);
+  border-left: 3px solid var(--color-red);
+  opacity: 0;
+  height: 7px;
+  width: 13px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 6px;
+  left: 4px;
+}
+
+#posting dl dd:nth-of-type(2) label::before {
+  background-color: var(--color-white);
+  border-radius: 0%;
+  border: 1px solid #ddd;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  left: 0px;
+}
+
+#posting dl dd:nth-of-type(2) ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+#posting dl dd:nth-of-type(2) ul li {
+  width: 25%;
+}
+
+#posting dl dd:nth-of-type(2) ul li:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 20px;
+}
+
+.for-not-user,
+.for-user {
+  text-align: center;
+}
+
+.for-not-user p,
+.for-user p {
+  margin-bottom: 20px;
+}
+
+.for-not-user .user-add-btn,
+.for-not-user .login-btn,
+.for-user .user-add-btn,
+.for-user .login-btn {
+  border: 1px solid var(--color-red);
+  color: var(--color-red);
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 13px 0;
+  margin-bottom: 10px;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  font-weight: 600;
+}
+
+.for-not-user .user-add-btn:hover,
+.for-not-user .login-btn:hover,
+.for-user .user-add-btn:hover,
+.for-user .login-btn:hover {
+  background-color: rgba(227, 51, 57, 0.05);
+}
+
+.question-star-content input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.question-star-content input.checked + label {
+  background: url(../img/starafter.svg) no-repeat;
+  background-size: contain;
+}
+
+.question-star-content label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 40px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.question-star-content label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(../img/starbefore.svg) no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+}
+
+.thanks {
+  text-align: center;
+}
+
+.thanks div {
+  margin-bottom: 30px;
+}
+
+.thanks div img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#success_modal {
+  width: 600px;
+}
+
+#success_modal p {
+  margin-bottom: 20px;
+}
+
+#success_modal .content {
+  margin-bottom: 40px;
+}
+
+#success_modal #close-btn {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px 0;
+  margin-bottom: 10px;
+}
+
+#profile dl dt:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+#profile dl dd #flex-file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+#profile dl dd #flex-file div {
+  margin-right: 30px;
+}
+
+#profile dl dd #flex-file div .cur-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+#profile dl dd #flex-file label #file-input {
+  display: none;
+}
+
+#profile dl dd #flex-file label .filelabel {
+  border: 1px solid var(--color-red);
+  padding: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  color: var(--color-red);
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  white-space: nowrap;
+}
+
+#profile dl dd #flex-file label .filelabel:hover {
+  background-color: rgba(227, 51, 57, 0.05);
+}
+
+#profile dl dd:nth-of-type(2) input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+#profile dl dd:nth-of-type(2) input:checked + label::after {
+  opacity: 1;
+}
+
+#profile dl dd:nth-of-type(2) label {
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+}
+
+#profile dl dd:nth-of-type(2) label[for="user-following"], #profile dl dd:nth-of-type(2) label[for="order-good"] {
+  margin-left: 12px;
+}
+
+#profile dl dd:nth-of-type(2) label::after, #profile dl dd:nth-of-type(2) label::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+#profile dl dd:nth-of-type(2) label::after {
+  border-bottom: 3px solid var(--color-red);
+  border-left: 3px solid var(--color-red);
+  opacity: 0;
+  height: 7px;
+  width: 13px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 6px;
+  left: 4px;
+}
+
+#profile dl dd:nth-of-type(2) label::before {
+  background-color: var(--color-white);
+  border-radius: 0%;
+  border: 1px solid #ddd;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  left: 0px;
+}
+
+#profile dl dd:nth-of-type(2) .limit {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #posting dl dd:nth-of-type(1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #posting dl dd:nth-of-type(1) .age-content {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  #posting dl dd:nth-of-type(1) .age-content .mail-to {
+    margin: 0 20px;
+  }
+  #posting dl dd:nth-of-type(1) .alert-text {
+    width: 100%;
+  }
+  #posting dl dd:nth-last-of-type(2) ul {
+    margin-bottom: 10px;
+  }
+  #posting dl dd:nth-last-of-type(2) ul li {
+    width: 50%;
+  }
+  #posting dl dd:nth-last-of-type(2) ul li:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 20px;
+  }
+  #posting #posting-btn {
+    width: 100%;
+  }
+  .form-contents #draft-add-btn,
+  .form-contents .draft-update-btn,
+  .form-contents #confirm-btn {
+    width: 100%;
+  }
+  #flex-file div .cur-icon {
+    width: 105px;
+    height: 105px;
+  }
+}
+/*# sourceMappingURL=form.css.map */

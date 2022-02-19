@@ -1,0 +1,531 @@
+/* mainvisual */
+.mainvisual {
+  height: 489px;
+}
+
+.mainvisual .slider-outer {
+  position: relative;
+  width: 100%;
+  height: 409px;
+}
+
+.mainvisual .slider-outer .main-text {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  padding-top: 30px;
+}
+
+.mainvisual .slider-outer .main-text.active span {
+  background-color: var(--color-white);
+}
+
+.mainvisual .slider-outer .main-text .main-text-right span {
+  padding: 10px 0;
+}
+
+.mainvisual .slider-outer .main-text .main-text-left span {
+  padding: 10px 0 0;
+  margin-right: 10px;
+}
+
+.mainvisual .slider-outer .main-text span {
+  background: url(./img/letter-hover.png);
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.mainvisual .slider-outer #slider {
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.mainvisual .slider-outer #slider.active {
+  opacity: 1;
+}
+
+.mainvisual .slider-outer #slider.active .bl,
+.mainvisual .slider-outer #slider.active .bb,
+.mainvisual .slider-outer #slider.active .bt,
+.mainvisual .slider-outer #slider.active .br {
+  display: block;
+}
+
+.mainvisual .slider-outer #slider .vegas-slide-inner {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+.mainvisual .slider-outer #slider .vegas-content-scrollable {
+  overflow-y: hidden;
+}
+
+.mainvisual .slider-outer #slider .bl,
+.mainvisual .slider-outer #slider .bb,
+.mainvisual .slider-outer #slider .bt,
+.mainvisual .slider-outer #slider .br {
+  display: none;
+}
+
+.mainvisual img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+#container.page {
+  padding-top: 60px;
+}
+
+#container #sort {
+  width: 29%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: var(--color-white);
+  background: url(../img/sort-background.svg) no-repeat;
+  background-size: cover;
+  padding: 205px 22px 0;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+#container #sort::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: -275px;
+  left: 0;
+  width: 100%;
+  height: 275px;
+  background: url(../img/sort-underbackground.svg) no-repeat;
+}
+
+#container #sort .letter-search-btn {
+  display: none;
+}
+
+#container #sort dl dt {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#container #sort dl dt i {
+  margin-right: 5px;
+}
+
+#container #sort dl dd {
+  margin-bottom: 40px;
+}
+
+#container #sort dl dd:not(:last-of-type) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container #sort dl dd:first-of-type {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 40px 12px;
+}
+
+#container #sort dl dd label:nth-of-type(2n) {
+  margin-left: 12px;
+}
+
+#container #sort dl dd label:nth-of-type(2n-1) {
+  margin: 0 12px;
+}
+
+#container #sort dl dd .mail-to {
+  margin: 0 20px;
+  font-size: 1.8rem;
+}
+
+#container #sort dl dd .age-select {
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px;
+  background: var(--color-white);
+  display: inline-block;
+}
+
+#container #sort dl dd .age-select select {
+  padding: 8px 50px 8px 8px;
+  color: var(--color-red);
+}
+
+#container #sort dl dd .age-select::before {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--color-red);
+  pointer-events: none;
+}
+
+#container #sort dl dd .age-select select {
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+#container #sort dl dd .age-select select::-ms-expand {
+  display: none;
+}
+
+#container #sort dl dd input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+#container #sort dl dd input:checked + label::after {
+  opacity: 1;
+}
+
+#container #sort dl dd label {
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+}
+
+#container #sort dl dd label::after, #container #sort dl dd label::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+#container #sort dl dd label::after {
+  border-bottom: 3px solid var(--color-red);
+  border-left: 3px solid var(--color-red);
+  opacity: 0;
+  height: 7px;
+  width: 13px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 6px;
+  left: 4px;
+}
+
+#container #sort dl dd label::before {
+  background-color: var(--color-white);
+  border-radius: 0%;
+  border: 1px solid #ddd;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  left: 0px;
+}
+
+#container #sort dl dd ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#container #sort dl dd ul li {
+  width: 50%;
+}
+
+#container #sort dl dd ul li:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 20px;
+}
+
+#container #sort input[type="submit"] {
+  width: 100%;
+  background-color: var(--color-white);
+  color: var(--color-red);
+  border-radius: 50px;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 600;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+#container #sort input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+#container .main-content {
+  width: 68%;
+}
+
+#container .main-content h3 {
+  margin-bottom: 15px;
+}
+
+#container .main-content .result-stats {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+#container .main-content .result-stats span {
+  margin-left: 20px;
+}
+
+#container .main-content #letter-list {
+  margin-bottom: 50px;
+}
+
+.questionnaire {
+  position: fixed;
+  z-index: 9998;
+  top: 50%;
+  right: -59px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.questionnaire:hover {
+  right: -49px;
+}
+
+.questionnaire img {
+  width: 107px;
+  height: 150px;
+  -o-object-position: left;
+     object-position: left;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#about {
+  margin-bottom: 80px;
+  line-height: 1.8;
+  font-size: 1.5rem;
+}
+
+#about h2 {
+  margin-bottom: 50px;
+}
+
+#about .text {
+  margin-bottom: 35px;
+}
+
+#about .text:nth-of-type(4) {
+  margin-bottom: 60px;
+}
+
+#about .from {
+  text-align: right;
+}
+
+#about .from time {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainvisual {
+    padding-right: 6.4vw;
+    padding-left: 6.4vw;
+    padding-bottom: calc(6.4vw + 60px - 5vh);
+    margin-bottom: 0;
+    height: calc(95vh - 60px);
+  }
+  .mainvisual .slider-outer {
+    height: 100%;
+  }
+  .mainvisual .slider-outer #slider {
+    height: 100%;
+    width: auto;
+  }
+  .mainvisual .slider-outer .main-text .main-text-left span {
+    margin-right: 8px;
+  }
+  #container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #container.page {
+    padding-top: 30px;
+  }
+  #container .main-content {
+    width: 100%;
+  }
+  #container #sort {
+    width: 100%;
+    padding: 65.641vw 5.641vw 0;
+    margin-bottom: 35.897vw;
+  }
+  #container #sort #letter-search dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #container #sort #letter-search dl dt {
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
+  }
+  #container #sort #letter-search dl dd {
+    margin-bottom: 30px;
+  }
+  #container #sort #letter-search dl dd:not(:last-of-type) {
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #container #sort #letter-search dl dd:first-of-type {
+    margin: 0 0 30px 12px;
+  }
+  #container #sort #letter-search dl dd label {
+    width: 50%;
+  }
+  #container #sort #letter-search dl dd ul li {
+    width: calc(100% / 3);
+  }
+  #container #sort #letter-search .sort-btn {
+    width: 100%;
+  }
+  .questionnaire {
+    right: -81px;
+  }
+  .questionnaire img {
+    width: 135px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .questionnaire {
+    right: -59px;
+  }
+  .questionnaire img {
+    width: 100px;
+    height: 130px;
+  }
+  #container #sort {
+    width: 100%;
+    padding: 65.641vw 5.641vw 0;
+    margin-bottom: 35.897vw;
+  }
+  #container #sort .letter-search-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: url(../img/letter-search-btn.svg) no-repeat center;
+    background-size: contain;
+    padding: 20px 0;
+    text-align: center;
+    color: var(--color-red);
+    border-radius: 5px;
+    position: relative;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  #container #sort .letter-search-btn.active::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  #container #sort .letter-search-btn::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 17.895vw;
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid var(--color-red);
+    pointer-events: none;
+  }
+  #container #sort #letter-search {
+    display: none;
+  }
+  #container #sort #letter-search dl {
+    display: block;
+  }
+  #container #sort #letter-search dl dd {
+    margin-bottom: 30px;
+  }
+  #container #sort #letter-search dl dd:not(:last-of-type) {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #container #sort #letter-search dl dd:first-of-type {
+    margin: 0 0 30px 12px;
+  }
+  #container #sort #letter-search dl dd label {
+    width: 50%;
+    margin: 0 0 0 12px;
+  }
+  #container #sort #letter-search dl dd ul li {
+    width: 50%;
+  }
+  #container #sort #letter-search .sort-btn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=top.css.map */
